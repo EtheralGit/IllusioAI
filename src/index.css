@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.section {
+  position: relative;
+  background: black;
+  padding: 4rem 1.25rem;
+}
+
+.title_page {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #5aed81;
+}
+
+.title_info {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  opacity: 0.85;
+  font-size: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.green_gradient {
+  background: linear-gradient(90deg, #eaeaea 0%, #5aed81 100%);
+  filter: blur(750px);
+}
+
+.price_dots {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.pricing_btn {
+  background: #5aed81;
+  color: black;
+  border: 2px solid #5aed81;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.pricing_btn:hover {
+  background: transparent;
+  color: #5aed81;
+}
+
+::-webkit-scrollbar {
+  width: 0.9rem;
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5aed81;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 4rem 5rem;
+  }
+}
